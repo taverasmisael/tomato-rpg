@@ -1,3 +1,18 @@
+:root {
+  --light-rest: #e0f7fa;
+  --dark-rest: #00bcd4;
+  --white: #ffffff;
+  --black-35: rgba(0, 0, 0, 0.35);
+  --black: #000000;
+  --glow-rest: rgba(179, 235, 242, 0.64);
+  --main-rest: #b2ebf2;
+  --black-85: rgba(43, 35, 35, 0.85);
+  --light-work: #ffebee;
+  --dark-work: #e85555;
+  --glow-work: rgba(209, 98, 98, 0.64);
+  --main-work: #d16565;
+}
+
 #app {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -5,5 +20,78 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+}
+
+.t-timer-label--light {
+  font-family: Overpass;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.53;
+  letter-spacing: -0.53px;
+  text-align: center;
+  color: var(--white);
+}
+
+.t-timer-label--dark {
+  font-family: Overpass;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.53;
+  letter-spacing: -0.53px;
+  text-align: center;
+  color: var(--black-85);
+}
+
+.t-task--name {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.17;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.t-task--label {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.t--placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.t--weight-medium {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.09px;
+  text-align: left;
+  color: var(--black);
+}
+
+.t--body {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.09px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.t--small {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.38px;
+  text-align: center;
+  color: var(--white);
 }
