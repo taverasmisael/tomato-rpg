@@ -1,45 +1,45 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/",
-    name: "home",
-    component: Home
+    path: '/',
+    name: 'home',
+    component: Home,
   },
   {
-    path: "/about",
-    name: "about",
+    path: '/about',
+    name: 'about',
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+      import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
-    path: "/reports",
-    name: "reports",
+    path: '/reports',
+    name: 'reports',
     component: () =>
-      import(/* webpackChunkName: "reports" */ "../views/Reports.vue")
+      import(/* webpackChunkName: "reports" */ '../views/Reports.vue'),
   },
   {
-    path: "/settings",
-    name: "settings",
+    path: '/settings',
+    name: 'settings',
     component: () =>
-      import(/* webpackChunkName: "settings" */ "../views/Settings.vue")
+      import(/* webpackChunkName: "settings" */ '../views/Settings.vue'),
   },
   {
-    path: "/profile",
-    name: "profile",
+    path: '/profile',
+    name: 'profile',
     component: () =>
-      import(/* webpackChunkName: "profile" */ "../views/Profile.vue")
-  }
-];
+      import(/* webpackChunkName: "profile" */ '../views/Profile.vue'),
+  },
+]
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
-  routes
-});
+  routes,
+})
 
-export default router;
+export default router
