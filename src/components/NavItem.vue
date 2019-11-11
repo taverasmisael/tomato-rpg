@@ -22,9 +22,27 @@ export default class NavItem extends Vue {
 <style scoped>
 .nav-item {
   display: block;
-  padding: 0.25em 0.5em;
+  position: relative;
+  padding: 0.5em 1em;
   text-decoration: none;
+  transition: all 350ms ease-in;
 }
+
+.nav-item::before {
+  background: currentColor;
+  border-radius: 4px;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: -1px;
+  transition: all 300ms ease;
+  transform-origin: center;
+  transform: scaleX(0);
+  width: 100%;
+}
+
 .nav-item:hover,
 .nav-item:active,
 .nav-item:visited,
@@ -48,8 +66,10 @@ export default class NavItem extends Vue {
 }
 
 .nav-item.is-active {
-  padding-left: 2em;
-  padding-right: 2em;
+  height: 100%;
+}
+.nav-item.is-active::before {
+  transform: scaleX(1);
 }
 
 .nav-item.is-active .text {
